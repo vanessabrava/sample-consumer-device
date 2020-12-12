@@ -40,7 +40,7 @@ namespace Sample.Consumer.Device.Host.EventHub
 
         public override async Task OpenAsync(PartitionContext context)
         {
-            Console.WriteLine($"AuthorizerEventProcessor initialized. Partition: '{context.PartitionId}'");
+            Console.WriteLine($"DeviceEventProcessor initialized. Partition: '{context.PartitionId}'");
             await base.OpenAsync(context);
         }
 

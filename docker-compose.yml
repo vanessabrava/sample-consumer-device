@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  sample.consumer.device.host.api:
+    image: vanessabrava/sample-consumer-device:${TAG}
+    build:
+      context: .
+      dockerfile: Sample.Consumer.Device.Host.Api/Dockerfile
+    container_name: sample-consumer-device
