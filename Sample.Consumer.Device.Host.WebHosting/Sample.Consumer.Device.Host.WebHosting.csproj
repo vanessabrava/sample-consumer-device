@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Consumer.Device.Host.EventHub\Sample.Consumer.Device.Host.EventHub.csproj" />
+    <ProjectReference Include="..\Sample.Consumer.Device.Infra.CrossCutting.EventHub\Sample.Consumer.Device.Infra.CrossCutting.EventHub.csproj" />
+    <ProjectReference Include="..\Sample.Consumer.Device.Infra.CrossCutting.HostedService\Sample.Consumer.Device.Infra.CrossCutting.HostedService.csproj" />
+  </ItemGroup>
+
+</Project>
