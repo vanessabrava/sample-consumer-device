@@ -6,7 +6,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY *.sln ./
 COPY NuGet.config ./
-COPY Sample.Consumer.Device.Host.Api/Sample.Consumer.Device.Host.Api.csproj", "Sample.Consumer.Device.Host.Api/
+COPY Sample.Consumer.Device.Host.Api/Sample.Consumer.Device.Host.Api.csproj Sample.Consumer.Device.Host.Api/
 RUN dotnet restore Sample.Consumer.Device.Host.Api/Sample.Consumer.Device.Host.Api.csproj
 
 COPY . .
